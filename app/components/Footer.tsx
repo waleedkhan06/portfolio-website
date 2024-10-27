@@ -6,7 +6,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   const [isVisible, setIsVisible] = useState(false);
 
-  // Toggle visibility of scroll-to-top button based on scroll position
+
   useEffect(() => {
     const toggleVisibility = () => {
       setIsVisible(window.scrollY > 200);
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Scroll-to-Top Button */}
+
       {isVisible && (
         <button 
           onClick={scrollToTop} 
