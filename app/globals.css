@@ -1,21 +1,21 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* globals.css */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
+
+.dark {
+  background-color: #1a202c; /* Dark background */
+  color: #f7fafc; /* Light text */
+}
+
+.dark .bg-white {
+  background-color: #2d3748; /* Dark background for elements */
+}
+
+/* Additional styles for dark mode can be added here */
+
