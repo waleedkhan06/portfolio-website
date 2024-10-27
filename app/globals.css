@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities; 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9e59078094ccc58664c1ea56694019efd167e4e1
 body {
   transition: background-color 0.3s ease, color 0.3s ease; 
 }
