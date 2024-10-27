@@ -61,8 +61,8 @@ function Hero() {
           <Image
             src="/animated.gif" 
             alt="Profile"
-            width={320}
-            height={240}
+            width={450}
+            height={280}
             className="object-cover shadow-lg rounded-lg"
           />
         </div>
