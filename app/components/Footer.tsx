@@ -1,12 +1,12 @@
 "use client";
 import { useEffect, useState } from 'react';
-import { FaArrowUp } from 'react-icons/fa'; // Importing up arrow icon from react-icons
+import { FaArrowUp } from 'react-icons/fa'; // scroll down to up ke liye arrow icon
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const [isVisible, setIsVisible] = useState(false);
 
-  // Toggle visibility of scroll-to-top button based on scroll position
+
   useEffect(() => {
     const toggleVisibility = () => {
       setIsVisible(window.scrollY > 200);
@@ -15,7 +15,7 @@ export default function Footer() {
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
-  // Scroll-to-top function
+  // Scroll down to up function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -35,7 +35,7 @@ export default function Footer() {
               className="w-8 h-8 hover:opacity-80 transition duration-200" 
             />
           </a>
-          <a href="https://github.com/Wa1eedKhan" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/waleedkhan06" target="_blank" rel="noopener noreferrer">
             <img 
               src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg" 
               alt="GitHub" 
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Scroll-to-Top Button */}
+
       {isVisible && (
         <button 
           onClick={scrollToTop} 

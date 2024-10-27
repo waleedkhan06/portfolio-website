@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities; 
 
-/* globals.css */
 
 body {
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .dark {
-  background-color: #1a202c; /* Dark background */
-  color: #f7fafc; /* Light text */
+  background-color: #1a202c; 
+  color: #f7fafc; 
 }
 
 .dark .bg-white {
-  background-color: #2d3748; /* Dark background for elements */
+  background-color: #2d3748; 
 }
 
-/* Additional styles for dark mode can be added here */
+
 

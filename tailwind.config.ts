@@ -1,22 +1,21 @@
-// tailwind.config.js
 module.exports = {
-  darkMode: 'class', // Enable class-based dark mode
+  darkMode: 'class', 
   content: [
-    './app/**/*.{js,ts,jsx,tsx}', // Include all relevant directories
+    './app/**/*.{js,ts,jsx,tsx}', 
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        'bright-cyan': '#00e5ff',      // Cyan shade for dark mode
-        'soft-gold': '#FFD700',        // Soft gold for light mode text
+        'bright-cyan': '#00e5ff',   
+        'soft-gold': '#FFD700',      
       },
       backgroundImage: {
-        'gold-gradient': 'linear-gradient(135deg, #FFD700, #FFC300)',  // Gold gradient for light mode
-        'cyan-gradient': 'linear-gradient(135deg, #00e5ff, #00c6ff, #00aaff)', // Cyan gradient for dark mode
+        'gold-gradient': 'linear-gradient(135deg, #FFD700, #FFC300)',  
+        'cyan-gradient': 'linear-gradient(135deg, #00e5ff, #00c6ff, #00aaff)',
       },
       animation: {
-        'gradient-move': 'gradientAnimation 6s ease infinite', // Gradient animation
+        'gradient-move': 'gradientAnimation 6s ease infinite', 
       },
       keyframes: {
         gradientAnimation: {
