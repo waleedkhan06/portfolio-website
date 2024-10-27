@@ -28,8 +28,16 @@ const Skills = () => {
   return (
     <section id="skills" className="py-16 bg-white dark:bg-gray-900 text-center">
       <div className="container mx-auto">
+        {/* Dark Mode Toggle Button */}
+        <button 
+          onClick={() => setDarkMode(prev => !prev)}
+          className="mb-4 px-4 py-2 bg-gray-300 dark:bg-gray-700 text-black dark:text-white rounded-lg">
+          Toggle Dark Mode
+        </button>
+
         <h2 className="text-4xl font-semibold mb-4 text-soft-gold dark:text-cyan-400">
-          Skills</h2>
+          Skills
+        </h2>
         <p className="mb-8 text-black dark:text-cyan-300">
           A summary of my technical expertise and proficiency level in each skill.
         </p>

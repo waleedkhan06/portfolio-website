@@ -30,13 +30,13 @@ const projectsData = [
   {
     id: 5,
     title: 'Class Assignment 1',
-    description: 'This Assignment  organizes and manages Next.js pages.',
+    description: 'This Assignment organizes and manages Next.js pages.',
     link: 'https://class-assignments-o8ptdgvei-waleed0248s-projects.vercel.app' 
   },
   {
     id: 6,
     title: 'Class Assignment 2',
-    description: 'This Assignment class focuses on developing components with proper styling using CSS',
+    description: 'This Assignment class focuses on developing components with proper styling using CSS.',
     link: 'https://class-assignments2-mvkkdudb3-waleed0248s-projects.vercel.app' 
   },
   {
@@ -48,7 +48,7 @@ const projectsData = [
 ];
 
 const Projects = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode] = useState(false);  // Remove setDarkMode to avoid the error
 
   useEffect(() => {
     if (darkMode) {
@@ -62,9 +62,11 @@ const Projects = () => {
     <section id="projects" className="py-16 bg-white dark:bg-gray-900 text-center">
       <div className="container mx-auto">
         <h2 className="text-4xl font-semibold mb-4 text-soft-gold dark:text-cyan-400">
-          My Projects</h2>
+          My Projects
+        </h2>
         <p className="mb-8 text-black dark:text-cyan-300">
-          Explore some of my recent work below:</p>
+          Explore some of my recent work below:
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projectsData.map((project) => (
@@ -76,12 +78,12 @@ const Projects = () => {
                bg-[length:800%_800%] animate-gradient-move
                text-black dark:text-white"
             >
-              <h3 className="text-2xl font-semibold mb-4 text-black
-               dark:text-black">
+              <h3 className="text-2xl font-semibold mb-4 text-black dark:text-black">
                 {project.title}
               </h3>
               <p className="mb-4 text-black dark:text-black">
-                {project.description}</p>
+                {project.description}
+              </p>
               <a
                 href={project.link}
                 className="px-6 py-3 rounded-lg transition-colors duration-300 
@@ -101,8 +103,4 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
-
 

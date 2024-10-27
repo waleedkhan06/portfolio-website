@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Hero() {
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
@@ -16,26 +17,23 @@ function Hero() {
       <div className="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row 
       items-center justify-between px-4">
         
-        
         <div className="md:w-2/3 text-center md:text-left">
           <h1 className="text-5xl font-bold text-soft-gold dark:text-cyan-400 mb-2">
             HELLO
           </h1>
           <h1 className="text-8xl font-bold text-soft-gold dark:text-cyan-400 mb-2">
-            I'm <span className="text-soft-gold dark:text-cyan-400 ">Waleed Khan</span>
+            I&apos;m <span className="text-soft-gold dark:text-cyan-400 ">Waleed Khan</span>
           </h1>
           <h2 className="text-5xl font-bold text-soft-gold dark:text-cyan-400  mb-4">
             Frontend Developer
           </h2>
 
-          
           <p className="mt-4 text-2xl text-black dark:text-cyan-300">
-            Welcome to my portfolio! I’m Waleed, a creative and dedicated
+            Welcome to my portfolio! I&rsquo;m Waleed, a creative and dedicated
              frontend developer with a passion for building responsive, 
              user-friendly websites.
           </p>
 
-      
           <div className="mt-6 space-x-4 animate-opacity-fade delay-600">
             <Link 
               href="#projects"
@@ -60,10 +58,12 @@ function Hero() {
 
        {/*image*/}
         <div className="md:w-1/3 flex justify-center md:justify-end mb-8 md:mb-0">
-          <img
+          <Image
             src="/animated.gif" 
             alt="Profile"
-            className="w-80 h-60 object-cover shadow-lg rounded-lg"
+            width={320}
+            height={240}
+            className="object-cover shadow-lg rounded-lg"
           />
         </div>
       </div>
@@ -72,4 +72,3 @@ function Hero() {
 }
 
 export default Hero;
-
