@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 function Hero() {
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>,
+     target: string) => {
     e.preventDefault();
     const section = document.querySelector(target);
     if (section) {
@@ -18,13 +19,17 @@ function Hero() {
       items-center justify-between px-4">
         
         <div className="md:w-2/3 text-center md:text-left">
-          <h1 className="text-5xl font-bold text-soft-gold dark:text-cyan-400 mb-2">
+          <h1 className="text-5xl font-bold text-soft-gold
+           dark:text-cyan-400 mb-2">
             HELLO
           </h1>
-          <h1 className="text-8xl font-bold text-soft-gold dark:text-cyan-400 mb-2">
-            I&apos;m <span className="text-soft-gold dark:text-cyan-400 ">Waleed Khan</span>
+          <h1 className="text-8xl font-bold text-soft-gold
+           dark:text-cyan-400 mb-2">
+            I&apos;m <span className="text-soft-gold
+             dark:text-cyan-400 ">Waleed Khan</span>
           </h1>
-          <h2 className="text-5xl font-bold text-soft-gold dark:text-cyan-400  mb-4">
+          <h2 className="text-5xl font-bold text-black
+           dark:text-cyan-400  mb-4">
             Frontend Developer
           </h2>
 

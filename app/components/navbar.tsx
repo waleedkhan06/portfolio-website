@@ -16,7 +16,8 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>,
+     target: string) => {
     e.preventDefault();
     const section = document.querySelector(target);
     if (section) {
@@ -26,13 +27,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`bg-soft-gold dark:bg-gray-900 text-white shadow-lg transition-all duration-300`}>
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center cursor-pointer">
+    <nav className={`bg-soft-gold dark:bg-gray-900 text-white 
+    shadow-lg transition-all duration-300`}>
+      <div className="container mx-auto px-4 py-3 flex items-center
+       justify-between">
+       
+
+        <div className="flex items-center space-x-2 cursor-pointer">
           <Link href="#home">
             <Image src="/logo.png" alt="Logo" width={80} height={44} />
           </Link>
+          <span className="text-xl font-bold
+           dark:text-cyan-400">My Portfolio</span>
         </div>
 
         {/* Desktop Navigation Links */}
